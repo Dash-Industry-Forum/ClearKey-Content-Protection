@@ -30,7 +30,7 @@ CCP leverages the ClearKey mode defined by Encrypted Media Extensions. It afford
 
     ```{"keys":[{"kty":"oct","k":"FmY0xnWCPCNaSpRG-tUuTQ","kid":"nrQFDeRLSAKTLifXUIPiZg"}],"type":"temporary"}```
 
-    which the player can then use to proceed with decryption via the CENC (Common Encryption) componentavailable on the device. 
+    which the player can then use to proceed with decryption via the CENC (Common Encryption) component available on the device. 
     
     
  ## Examples
@@ -41,7 +41,7 @@ https://dash-license.westus.cloudapp.azure.com/ClearKey_2160p/Manifest_ClearKey.
 A functioning license server at
 https://dash-license.westus.cloudapp.azure.com/AcquireLicense
 
-The dash.js player support server-side CCCP via this branch:
+The dash.js player supports server-side CCCP via this branch:
 https://github.com/Dash-Industry-Forum/dash.js/tree/feature-clearkeyByServer
 
 Issue tracker for dash.js integration:
