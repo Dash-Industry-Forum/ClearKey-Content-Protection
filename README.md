@@ -6,7 +6,7 @@ Various solutions exist today to protect the distribution of DASH content over t
 
 The cost of these solutions increases in the order described, with DRM providing the greatest level of protection but generally requiring the highest preparation, and in many cases licensing, cost.
 
-Within the HLS content delivery ecosystem, there exists a protection mode known as "AES-128 Encryption" or "Envelope Encryption". With this mode, the entire media container is encrypted using AES-128 and a URL (often token protected and always over HTTPS) is added to the playlist which the player can call to retrieve the decryption key. The key is sent in the clear and the player decrypts the media objects in application space before providing them to the source buffer. This mode provides more security than [1] and [2] above, but at a lower cost than [3]
+Within the HLS content delivery ecosystem, there exists a protection mode known as "AES-128 Encryption" or "Envelope Encryption". With this mode, the entire media container is encrypted using AES-128 and a URL (often token protected and always over HTTPS) is added to the playlist which the player can call to retrieve the decryption key. The key is sent in the clear and the player decrypts the media objects in application space before providing them to the source buffer. This mode provides more security than [1] and [2] above, but at a lower cost and protection level than [3]
 
 To date, the DASH ecosystem has lacked an equivalent to AES-128 encryption. To fill this gap and to provide a level of content protection between HTTPS-delivered token auth and DRM, we propose ClearKey Content Protection (CCP).
 
